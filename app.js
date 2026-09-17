@@ -674,10 +674,43 @@
       <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="btn-intra" style="${btnStyle} font-weight: 700; padding: 0.7rem 1.3rem; border: none; font-size: 0.9rem;">
         <span>${isWinner ? 'Open GOAT Profile 🐐' : 'Open L Profile 💀'}</span>
         ${arrowIcon}
-      </a>`;
+      </a>
+      <button id="modalShuffleBtn" style="
+        width: 100%;
+        margin-top: 0.75rem;
+        padding: 0.65rem 1.3rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        font-family: inherit;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255,0.12);
+        background: rgba(255,255,255,0.06);
+        color: #e2e8f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        transition: all 0.2s ease;
+      ">🎲 Shuffle — Next Student</button>`;
 
     const modalTag = document.getElementById('modalLoginTag');
     if (modalTag) modalTag.addEventListener('click', () => copyToClipboard(student.login));
+
+    const shuffleBtn = document.getElementById('modalShuffleBtn');
+    if (shuffleBtn) {
+      shuffleBtn.addEventListener('click', () => pickRandomStudent());
+      shuffleBtn.addEventListener('mouseenter', () => {
+        shuffleBtn.style.background = 'rgba(255,255,255,0.12)';
+        shuffleBtn.style.borderColor = 'rgba(255,215,0,0.4)';
+        shuffleBtn.style.color = '#ffd700';
+      });
+      shuffleBtn.addEventListener('mouseleave', () => {
+        shuffleBtn.style.background = 'rgba(255,255,255,0.06)';
+        shuffleBtn.style.borderColor = 'rgba(255,255,255,0.12)';
+        shuffleBtn.style.color = '#e2e8f0';
+      });
+    }
 
     elements.spotlightModal.classList.add('active');
 
