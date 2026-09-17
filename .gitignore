@@ -7,3 +7,7 @@ __pycache__/
 # Environment & credentials
 .env
 .env.*
+
+# Backups
+roasts_backup.txt
+roasts*.txt

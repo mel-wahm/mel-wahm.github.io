@@ -40,120 +40,56 @@
   ];
 
   const LOSER_TAGLINES = [
-    "Skill Issue 💀",
-    "Down Bad 📉",
-    "L + Ratio 📊",
-    "Pack Ur Bags 🧳",
-    "Game Over 🎮",
-    "Caught in 4K 📸",
-    "Massive L 🫠",
-    "Clown of the Day 🤡",
-    "Insert Coin to Retry 🪙",
-    "Error 404: Skills Not Found 🔍",
-    "Alt+F4 IRL 💻",
-    "Connection Lost 📡",
-    "Task Failed Successfully ❌",
-    "Respawn in 6 Months 🕐",
-    "Try Again Next Piscine 🔄",
-    "Ctrl+Z Your Life Choices ⌨️",
-    "gg wp (not really) 🫡",
-    "Emotional Damage 💔",
-    "NPC Energy 🤖",
-    "Down Horrendous 😭",
-    "Bro Thought He Could 💭",
-    "Main Character? More Like Extra 🎬",
-    "Copium Overdose 🫁",
-    "Rent Free in the L Column 🏠",
-    "L Magnet 🧲",
-    "Diff: Astronomical 🌌",
-    "Siri, Play Despacito 📱",
-    "It Is What It Is 🤷",
-    "AFK During Exams 🚶",
-    "Debug This Ratio 🐛",
-    "Uninstall Life.exe 🗑️",
-    "404 Brain Not Found 🧠",
-    "Your Code Compiles in Heaven 🪦",
-    "Segfault in Real Life 💥",
-    "git push --force to unemployment 📤",
-    "sudo rm -rf career/ 🫠",
-    "malloc(success) returned NULL 🔴",
-    "Bro Peaked at Hello World 👶",
-    "Even Stack Overflow Can't Save U 🆘",
-    "DNS: Dreams Not Selected 🌐",
-    "chmod 000 your_future 🔒",
-    "while(true) { take_L(); } 🔁",
-    "Exception: TalentNotFoundException 🚫",
-    "return EXIT_FAILURE; 🚪",
-    "Norminette Said No to Your Life 📏",
-    "Bro Studied on YouTube Shorts 📵",
-    "The Piscine Piscined You 🏊",
-    "Certified Bench Warmer 🪑",
-    "Built Like a Syntax Error 🏗️",
-    "Free() Called on Your Dreams 🗑️",
-    "Bro Got Outperformed by printf 🖨️",
-    "Your Keyboard Deserves Better ⌨️",
-    "Allocated Memory, Forgot to Learn 🧠",
-    "Walked in Sigma, Walked Out NPC 🚶",
-    "Bro Compiled but Never Ran 🏃",
-    "Not Even ChatGPT Could Save This 🤖",
-    "Submitted vibes.c Instead of Code 🎵",
-    "Core Dumped & So Did Your Chances 💣",
-    "Makefile: No Rule to Make 'Success' 📜",
-    "Exam: You | You: 😴 💤",
-    "Sleep(forever) Activated 😴",
-    "Your Pointers Point Nowhere 🧭",
-    "Valgrind Found 42 Leaks (All Yours) 🚰",
-    "Bro Forked but Never Executed 🍴",
-    "SIGKILL Received From 42 ☠️",
-    "Pack Watch 💨",
-    "Bro Really Thought This Was the One 😬",
-    "This You? Because It's Giving Failure 📸",
-    "Someone Check on Him 🏥",
-    "Current Status: Second-Hand Embarrassment 😳",
-    "Who Lied to You? 🤥",
-    "It's the Delusion for Me 🫣",
-    "A for Effort, F for Execution 📝",
-    "You Tried. And That's the Cutest Part 🥹",
-    "Participation Trophy Incoming 🏆",
-    "Nice Try. Really. (But No.) 🙂",
-    "Shof had lexpooler ☝️😂",
-    "👩: Wash maghadich t9aleb lik 3la khedma",
-    "Mdy3 khooto f post 💃",
-    "Gha khsser lflous d lekra 💸",
-    "Gha dwz sif omcha 🥥🌴🌅",
-    "Wld fin nta? 🥷🏻",
-    "Ana li 7mar onj7t 🤷",
-    "O Gals katsab9 3la blasa f bus 🤷‍♀️",
-    "Better Luck Next Life 🔮",
-    "Zero Stars. Would Not Recommend ⭐",
-    "Expectation vs Reality: A Tragedy 🎭",
-    "Embracing the Flop Era 📉",
-    "Human Version of a Buffering Screen 🔄",
-    "You're the Reason Shampoo Has Instructions 🧴",
-    "If Being Wrong Was a Sport, Gold Medal 🥇",
-    "Delete This. For Your Own Safety 🗑️",
-    "Not Today, Not Tomorrow, Maybe Never 🚫",
-    "Bro Lost Aura Points in Real Time 📉",
-    "Absolutely Cooked 🍳",
-    "It's Giving... Everything But Success 💅",
-    "Delulu Is NOT the Solulu Here 🌈",
-    "POV: You're the Before Photo 📷",
-    "Bro Is the Tutorial Level Boss 🎮",
-    "You're Not a Vibe. You're a Warning ⚠️",
-    "Caught Lacking in 8K Ultra HD 📹",
-    "Certified Opp of Success 🚷",
-    "The Audacity vs The Ability 😤",
-    "Google: How to Cope 🔍",
-    "Bro Brought a Spoon to a Sword Fight 🥄",
-    "The WiFi Is Stronger Than Your Hustle 📶",
-    "Even Your Mom Hit Skip on This One ⏭️",
-    "Went From We'll See to We Saw 💀",
-    "Plot Twist: There Was No Plot 🎬",
-    "Bro's Highlight Reel Is Just Bloopers 🎞️",
-    "Ratio + Cope + Seethe + Touch Grass 🌿",
-    "You Dropped This → L 🫴",
-    "Bro Speedran Failure Any% 🏃",
-    "Certified Flop of the Season 📺",
+    "Gave It Everything 👏",
+    "Solid Run, Head Up 👊",
+    "Next Pool Is Yours 🏊",
+    "Surviving the Pool Is a W 🌊",
+    "4 Weeks of C Done, Respect 🫡",
+    "Valuable XP Gained 🎮",
+    "Just Getting Warmed Up 🔥",
+    "Keep Coding, Keep Building 🛠️",
+    "Round 2 Loading ⏳",
+    "Learned a Ton, Keep Going 📈",
+    "The Grind Doesn't Stop ⚡",
+    "Heads Held High 🤝",
+    "Much Respect for the Hustle ✊",
+    "Piscine Veteran 🎖️",
+    "Knowledge Stays Forever 🧠",
+    "Bounce Back Season 🔄",
+    "Code Game Strong 💻",
+    "Only Up From Here 🚀",
+    "Proud of the Journey 🤜🤛",
+    "Keep That Momentum ⚡",
+    "Hard Work Never Lies 💼",
+    "Leveling Up Every Day 🆙",
+    "Fought Till the Final Exam 📝",
+    "Skills Unlocked, Keep At It 🗝️",
+    "Great Spirit, Great Run ✨",
+    "The Journey Is Just Starting 🌱",
+    "Solid Teammate, Solid Coder 🦾",
+    "Respect the Dedication 💯",
+    "Ready for the Next Challenge 🎯",
+    "One Month of C Changes You ☕",
+    "Keep Your Chin Up 🛡️",
+    "Built Resilience for Life 🧱",
+    "Came Out Stronger 💪",
+    "Next Time’s the Charm 🍀",
+    "Pushed Through to the End 🏁",
+    "The Real Win Was the Growth 🌳",
+    "Never Stop Writing Code ⌨️",
+    "Keep That Fire Alive 🕯️",
+    "XP Stacked High 📊",
+    "Proud of the Effort Put In 🌟",
+    "Made Lifelong Friends 🤝",
+    "No Regrets, Full Effort 💯",
+    "Great Energy All Month 💫",
+    "The Hardest Month Is Behind You 🏔️",
+    "On to Bigger Things 🌌",
+    "Solid Foundation Built 🏛️",
+    "Respect the Process 🌀",
+    "Every Master Started Here 🥋",
+    "Walked Out a Better Coder 👨‍💻",
+    "You Showed Up and Fought 🥊",
   ];
 
   const WINNER_OVERLAY_TEXTS = [
@@ -165,11 +101,11 @@
   ];
 
   const LOSER_OVERLAY_TEXTS = [
-    "View This Clown 🤡",
-    "See the Wreckage",
-    "Inspect the Damage",
-    "Open L Collector",
-    "View the NPC",
+    "View Profile 🌊",
+    "Check Out Profile",
+    "Respect the Hustle ✊",
+    "View Pisciner",
+    "Open Intra Profile",
   ];
 
   // Random helper
@@ -300,7 +236,7 @@
       fullName: `${st.first_name || ''} ${st.last_name || ''}`.trim(),
       profile_picture: st.profile_picture,
       status,
-      statusLabel: status === 's' ? 'Selected' : 'Rejected',
+      statusLabel: status === 's' ? 'Selected' : 'Pisciner',
       level: st.level !== undefined && st.level !== null ? Number(st.level) : null,
       originalIndex: index,
     };
@@ -516,8 +452,8 @@
     const tagline = state.taglines.get(student.login) || '';
     const overlayText = state.overlayTexts.get(student.login) || 'View Profile';
     const badgeClass = isWinner ? 'badge-winner' : 'badge-loser';
-    const badgeEmoji = isWinner ? '👑 ' : '🤡 ';
-    const btnLabel = isWinner ? 'View GOAT Profile' : 'View L Profile';
+    const badgeEmoji = isWinner ? '👑 ' : '🌊 ';
+    const btnLabel = isWinner ? 'View GOAT Profile' : 'View Profile';
     const sparkles = isWinner ? createSparklesHTML() : '';
 
     const levelDisplay = (student.level !== null && student.level !== undefined)
@@ -533,7 +469,7 @@
           <div class="avatar-wrapper">
             <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="avatar-link" title="${overlayText}">
               <img src="${student.profile_picture}" alt="${esc(student.fullName)}" class="avatar-img" loading="lazy" data-initials="${initials}"/>
-              <div class="avatar-overlay"><span>${isWinner ? '👑' : '💀'}</span></div>
+              <div class="avatar-overlay"><span>${isWinner ? '👑' : '🌊'}</span></div>
             </a>
           </div>
           <div class="list-info-primary">
@@ -612,7 +548,7 @@
     const isWinner = student.status === 's';
     const tagline = state.taglines.get(student.login) || '';
     const badgeClass = isWinner ? 'badge-winner' : 'badge-loser';
-    const emoji = isWinner ? '👑 ' : '🤡 ';
+    const emoji = isWinner ? '👑 ' : '🌊 ';
 
     // Style the modal card border based on status
     const modalCard = elements.spotlightModal.querySelector('.modal-card');
@@ -621,8 +557,8 @@
         modalCard.style.borderColor = 'rgba(255, 215, 0, 0.5)';
         modalCard.style.boxShadow = '0 20px 40px rgba(0,0,0,0.7), 0 0 60px rgba(255,215,0,0.3)';
       } else {
-        modalCard.style.borderColor = 'rgba(239, 68, 68, 0.4)';
-        modalCard.style.boxShadow = '0 20px 40px rgba(0,0,0,0.7), 0 0 60px rgba(239,68,68,0.2)';
+        modalCard.style.borderColor = 'rgba(56, 189, 248, 0.45)';
+        modalCard.style.boxShadow = '0 20px 40px rgba(0,0,0,0.7), 0 0 60px rgba(56,189,248,0.2)';
       }
     }
 
@@ -656,41 +592,40 @@
             font-size: 3.5rem;
             line-height: 1;
             margin-bottom: 0.3rem;
-          ">💀</div>
+          ">🌊</div>
          <div style="
             font-size: 1.4rem;
             font-weight: 900;
             text-transform: uppercase;
             letter-spacing: 0.15em;
-            color: #ef4444;
+            color: #38bdf8;
             margin-bottom: 0.2rem;
-          ">LOSER</div>
+          ">PISCINER</div>
          <div style="
             font-size: 0.78rem;
-            color: #64748b;
+            color: #94a3b8;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.08em;
             margin-bottom: 1.2rem;
-            font-style: italic;
-          ">🤡 Didn't make the cut 🤡</div>`;
+          ">💪 Respect the grind 💪</div>`;
 
     const btnStyle = isWinner
       ? 'background: linear-gradient(135deg, #ffd700, #ffaa00); color: #1a1a0a;'
-      : 'background: #374151; color: #94a3b8;';
+      : 'background: #1e293b; color: #38bdf8; border: 1px solid rgba(56,189,248,0.3);';
 
     elements.modalContent.innerHTML = `
       ${verdictBanner}
       <div class="avatar-wrapper" style="margin-bottom: 1.25rem; display: flex; justify-content: center;">
-        <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="avatar-link" style="width: 128px; height: 128px; ${isWinner ? 'background: linear-gradient(135deg, #ffd700, #ff8c00, #ffd700); box-shadow: 0 0 30px rgba(255,215,0,0.4);' : 'background: linear-gradient(135deg, #374151, #1f2937);'}">
-          <img src="${student.profile_picture}" alt="${esc(student.fullName)}" class="avatar-img" style="${isWinner ? '' : 'filter: grayscale(60%) brightness(0.85);'}"/>
-          <div class="avatar-overlay" style="${isWinner ? 'background: rgba(255,215,0,0.88); color: #1a1a0a;' : 'background: rgba(50,50,60,0.9); color: #94a3b8;'}">
-            <span>${isWinner ? 'View This King 👑' : 'View This Clown 🤡'}</span>
+        <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="avatar-link" style="width: 128px; height: 128px; ${isWinner ? 'background: linear-gradient(135deg, #ffd700, #ff8c00, #ffd700); box-shadow: 0 0 30px rgba(255,215,0,0.4);' : 'background: linear-gradient(135deg, #0284c7, #1e293b); box-shadow: 0 0 25px rgba(56,189,248,0.25);'}">
+          <img src="${student.profile_picture}" alt="${esc(student.fullName)}" class="avatar-img"/>
+          <div class="avatar-overlay" style="${isWinner ? 'background: rgba(255,215,0,0.88); color: #1a1a0a;' : 'background: rgba(14,20,34,0.88); color: #38bdf8;'}">
+            <span>${isWinner ? 'View This King 👑' : 'View Profile 🌊'}</span>
           </div>
         </a>
       </div>
-      <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.3rem; color: ${isWinner ? '#fff' : '#64748b'};">${esc(student.fullName)}</h2>
-      <div class="login-tag" id="modalLoginTag" data-login="${student.login}" style="font-size: 0.95rem; margin-bottom: 0.75rem; ${isWinner ? 'color: #ffe566;' : 'color: #64748b;'}">
+      <h2 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 0.3rem; color: #fff;">${esc(student.fullName)}</h2>
+      <div class="login-tag" id="modalLoginTag" data-login="${student.login}" style="font-size: 0.95rem; margin-bottom: 0.75rem; ${isWinner ? 'color: #ffe566;' : 'color: #38bdf8;'}">
         <span>@${student.login}</span>
         ${copyIcon}
       </div>
@@ -699,9 +634,9 @@
         ${(student.level !== null && student.level !== undefined) ? `<span class="badge badge-level ${isWinner ? 'badge-level-winner' : 'badge-level-loser'}" style="font-size: 0.88rem; padding: 0.3rem 0.85rem;" title="Piscine Level">⚡ Lvl ${Number.isInteger(Number(student.level)) ? Number(student.level) : Number(student.level).toFixed(2)}</span>` : ''}
         <span class="id-tag" style="font-size: 0.85rem;">#${student.id}</span>
       </div>
-      <div class="meme-tagline" style="font-size: 0.9rem; margin-bottom: 1.25rem; padding: 0.35rem 0.85rem; ${isWinner ? 'background: rgba(255,215,0,0.12); color: #ffe566; border: 1px solid rgba(255,215,0,0.25);' : 'background: rgba(239,68,68,0.08); color: #f87171; border: 1px solid rgba(239,68,68,0.2); font-style: italic;'}">${tagline}</div>
-      <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="btn-intra" style="${btnStyle} font-weight: 700; padding: 0.7rem 1.3rem; border: none; font-size: 0.9rem;">
-        <span>${isWinner ? 'Open GOAT Profile 🐐' : 'Open L Profile 💀'}</span>
+      <div class="meme-tagline" style="font-size: 0.9rem; margin-bottom: 1.25rem; padding: 0.35rem 0.85rem; ${isWinner ? 'background: rgba(255,215,0,0.12); color: #ffe566; border: 1px solid rgba(255,215,0,0.25);' : 'background: rgba(56,189,248,0.08); color: #7dd3fc; border: 1px solid rgba(56,189,248,0.2);'}">${tagline}</div>
+      <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="btn-intra" style="${btnStyle} font-weight: 700; padding: 0.7rem 1.3rem; font-size: 0.9rem;">
+        <span>${isWinner ? 'Open GOAT Profile 🐐' : 'Open Intra Profile 🌊'}</span>
         ${arrowIcon}
       </a>
       <button id="modalShuffleBtn" style="
