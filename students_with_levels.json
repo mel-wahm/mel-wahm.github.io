@@ -1,4 +1,4 @@
-window.STUDENTS_DATA = {
+{
   "s": [
     {
       "id": 273889,
@@ -3835,4 +3835,4 @@ window.STUDENTS_DATA = {
       "level": 4.87
     }
   ]
-};
+}

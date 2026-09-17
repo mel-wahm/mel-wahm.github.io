@@ -183,7 +183,7 @@
     filteredStudents: [],
     searchQuery: '',
     statusFilter: 'all',
-    sortBy: 'default',
+    sortBy: 'level-desc',
     viewMode: 'grid',
     // Pre-assign taglines so they stay consistent per-student
     taglines: new Map(),
@@ -229,11 +229,21 @@
 
   async function loadData() {
     let rawData = null;
+    // 1. Try students_with_levels.json
     try {
-      const response = await fetch('result.json');
+      const response = await fetch('students_with_levels.json');
       if (response.ok) rawData = await response.json();
-    } catch (e) { /* fallback below */ }
+    } catch (e) { /* fallback */ }
 
+    // 2. Try result.json
+    if (!rawData) {
+      try {
+        const response = await fetch('result.json');
+        if (response.ok) rawData = await response.json();
+      } catch (e) { /* fallback */ }
+    }
+
+    // 3. Try window.STUDENTS_DATA
     if (!rawData && window.STUDENTS_DATA) rawData = window.STUDENTS_DATA;
 
     if (!rawData) {
@@ -291,6 +301,7 @@
       profile_picture: st.profile_picture,
       status,
       statusLabel: status === 's' ? 'Selected' : 'Rejected',
+      level: st.level !== undefined && st.level !== null ? Number(st.level) : null,
       originalIndex: index,
     };
   }
@@ -404,11 +415,19 @@
     }
 
     switch (state.sortBy) {
+      case 'level-desc': list.sort((a, b) => (b.level ?? -1) - (a.level ?? -1)); break;
+      case 'level-asc': list.sort((a, b) => (a.level ?? 999) - (b.level ?? 999)); break;
       case 'login-asc': list.sort((a, b) => a.login.localeCompare(b.login)); break;
       case 'login-desc': list.sort((a, b) => b.login.localeCompare(a.login)); break;
       case 'name-asc': list.sort((a, b) => a.fullName.localeCompare(b.fullName)); break;
       case 'name-desc': list.sort((a, b) => b.fullName.localeCompare(a.fullName)); break;
-      default: list.sort((a, b) => a.originalIndex - b.originalIndex); break;
+      default:
+        if (list.some(s => s.level !== null && s.level !== undefined)) {
+          list.sort((a, b) => (b.level ?? -1) - (a.level ?? -1));
+        } else {
+          list.sort((a, b) => a.originalIndex - b.originalIndex);
+        }
+        break;
     }
 
     state.filteredStudents = list;
@@ -501,6 +520,13 @@
     const btnLabel = isWinner ? 'View GOAT Profile' : 'View L Profile';
     const sparkles = isWinner ? createSparklesHTML() : '';
 
+    const levelDisplay = (student.level !== null && student.level !== undefined)
+      ? (Number.isInteger(Number(student.level)) ? Number(student.level) : Number(student.level).toFixed(2))
+      : '';
+    const levelBadge = levelDisplay !== ''
+      ? `<span class="badge badge-level ${isWinner ? 'badge-level-winner' : 'badge-level-loser'}" title="Piscine Level">⚡ Lvl ${levelDisplay}</span>`
+      : '';
+
     if (state.viewMode === 'list') {
       return `
         <div class="student-card status-${student.status}" id="student-${student.login}">
@@ -520,6 +546,7 @@
           </div>
           <div class="card-meta">
             <span class="badge ${badgeClass}">${badgeEmoji}${student.statusLabel}</span>
+            ${levelBadge}
           </div>
           <span class="meme-tagline">${tagline}</span>
           <a href="${profileUrl}" target="_blank" rel="noopener noreferrer" class="btn-intra">
@@ -548,6 +575,7 @@
         </div>
         <div class="card-meta">
           <span class="badge ${badgeClass}">${badgeEmoji}${student.statusLabel}</span>
+          ${levelBadge}
           <span class="id-tag">#${student.id}</span>
         </div>
         <div class="meme-tagline">${tagline}</div>
@@ -668,6 +696,7 @@
       </div>
       <div class="card-meta" style="margin-bottom: 0.75rem;">
         <span class="badge ${badgeClass}" style="font-size: 0.88rem; padding: 0.3rem 0.85rem;">${emoji}${student.statusLabel}</span>
+        ${(student.level !== null && student.level !== undefined) ? `<span class="badge badge-level ${isWinner ? 'badge-level-winner' : 'badge-level-loser'}" style="font-size: 0.88rem; padding: 0.3rem 0.85rem;" title="Piscine Level">⚡ Lvl ${Number.isInteger(Number(student.level)) ? Number(student.level) : Number(student.level).toFixed(2)}</span>` : ''}
         <span class="id-tag" style="font-size: 0.85rem;">#${student.id}</span>
       </div>
       <div class="meme-tagline" style="font-size: 0.9rem; margin-bottom: 1.25rem; padding: 0.35rem 0.85rem; ${isWinner ? 'background: rgba(255,215,0,0.12); color: #ffe566; border: 1px solid rgba(255,215,0,0.25);' : 'background: rgba(239,68,68,0.08); color: #f87171; border: 1px solid rgba(239,68,68,0.2); font-style: italic;'}">${tagline}</div>
