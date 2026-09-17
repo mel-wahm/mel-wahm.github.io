@@ -1,0 +1,9 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.py
+
+# Environment & credentials
+.env
+.env.*
